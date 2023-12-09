@@ -11,14 +11,7 @@ My blog
 {% endblock %}
 
 {% block content %}
-    <header id="main-navigation">
-        <h1>
-            <a href="#">MamadBlog</a>
-        </h1>
-    <nav>
-        <a href="#">All Posts</a>
-    </nav>
-    </header>
+
 
     <section id="welcome">
          <header>
@@ -32,28 +25,11 @@ My blog
 <section id="latestPost">
 <h2>Latest Post</h2>
     <ul>
-        <li>
-            <article class="post">
-                <a href="">
-                    <img src="{% static 'blog/images/django.png' %}" alt="Django">
-                    <div>
-                        <h3>learning</h3>
-                        <p>New</p>
-                    </div>
-                </a>
-            </article>
-        </li>
-        <li>
-            <article class="post">
-                <a href="">
-                     <img src="{% static 'blog/images/ml.png' %}" alt=".Net">
-                    <div>
-                        <h3>learning</h3>
-                        <p>New</p>
-                    </div>
-                </a>
-            </article>
-        </li>
+       {% include 'blog/includes/post.html' %}
+       {% include 'blog/includes/post.html' %}
+       {% include 'blog/includes/post.html' %}
+       {% include 'blog/includes/post.html' %}
+
 
     </ul>
 </section>
