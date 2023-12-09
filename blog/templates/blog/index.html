@@ -1,0 +1,69 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+{% block headerCss %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+
+{% block title %}
+My blog
+{% endblock %}
+
+{% block content %}
+    <header id="main-navigation">
+        <h1>
+            <a href="#">MamadBlog</a>
+        </h1>
+    <nav>
+        <a href="#">All Posts</a>
+    </nav>
+    </header>
+
+    <section id="welcome">
+         <header>
+              <img src="{% static 'blog/images/master.jpg' %}" alt="mamad photo">
+              <h2>mamad blog project</h2>
+         </header>
+       <p>Hi my name is mamad</p>
+    </section>
+
+
+<section id="latestPost">
+<h2>Latest Post</h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="">
+                    <img src="{% static 'blog/images/django.png' %}" alt="Django">
+                    <div>
+                        <h3>learning</h3>
+                        <p>New</p>
+                    </div>
+                </a>
+            </article>
+        </li>
+        <li>
+            <article class="post">
+                <a href="">
+                     <img src="{% static 'blog/images/ml.png' %}" alt=".Net">
+                    <div>
+                        <h3>learning</h3>
+                        <p>New</p>
+                    </div>
+                </a>
+            </article>
+        </li>
+
+    </ul>
+</section>
+
+    <section id="about">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quis.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Culpa eaque error illum ipsum neque nobis officia quae reiciendis tempora vero!
+        Dolorum earum harum quasi. Aliquid eum illo iste maiores quis sunt vitae voluptate.
+        Amet aperiam, distinctio dolore ea error est et excepturi facere minima nam necessitatibus nisi nulla numquam obcaecati optio
+        perferendis praesentium quo recusandae reprehenderit repudiandae, sed sequi ut.</p>
+    </section>
+{% endblock %}
